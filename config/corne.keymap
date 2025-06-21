@@ -20,10 +20,10 @@
 			// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 			//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 			bindings = <
-			&none &kp FR_A &kp FR_Z      &kp FR_E      &kp FR_R         &kp FR_T                 &kp FR_Y       &kp FR_Y       &kp FR_Y      &kp FR_Y      &kp FR_Y    &none
-			&none &kp FR_Q &mt LALT FR_S &mt LGUI FR_D &mt LCTRL FR_F   &kp FR_G                 &kp FR_H       &mt LCTRL FR_J &mt LGUI FR_K &mt LALT FR_L &kp FR_M    &none
-			&none &kp FR_W &kp FR_X      &kp FR_C      &kp FR_V         &kp FR_B                 &kp FR_N       &kp FR_COMMA   &kp FR_SEMI   &kp FR_COLON  &kp FR_FSLH &none
-			                             &kp TAB       &mt LSHFT FR_ESC &lt 1 FR_BSPC            &lt 1 FR_SPACE &mt RALT ENTER &kp DEL
+			&none &kp FR_A &kp FR_Z      &kp FR_E      &kp FR_R       &kp FR_T                 &kp FR_Y       &kp FR_U       &kp FR_I      &kp FR_O      &kp FR_P    &none
+			&none &kp FR_Q &mt LALT FR_S &mt LGUI FR_D &mt LCTRL FR_F &kp FR_G                 &kp FR_H       &mt LCTRL FR_J &mt LGUI FR_K &mt LALT FR_L &kp FR_M    &none
+			&none &kp FR_W &kp FR_X      &kp FR_C      &kp FR_V       &kp FR_B                 &kp FR_N       &kp FR_COMMA   &kp FR_SEMI   &kp FR_COLON  &kp FR_EXCL &none
+			                             &kp TAB       &mt LSHFT ESC  &lt 1 BSPC               &lt 1 FR_SPACE &mt RALT ENTER &kp DEL
 			>;
 		};
 		nav_layer {
@@ -33,10 +33,10 @@
 			// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 			//                    | GUI |     | SPC |   | ENT |     | ALT |
 			bindings = <
-			&none &kp TAB  &kp HOME          &kp UP     &kp END       &kp PAGE_UP          &kp FR_SLASH  &kp N7 &kp N8 &kp N9 &none      &none
-			&none &kp CAPS &kp LEFT          &kp DOWN   &kp PAGE_DOWN &bt BT_SEL 3         &kp FR_MINUS &kp N4  &kp N5 &kp N6 &kp N0     &none 
-			&none &none    &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOL_UP  &kp DEL              &kp FR_COMMA &kp N1  &kp N2 &kp N3 &kp FR_DOT &none 
-			                                 &none      &none         &none                &none        &none   &none
+			&none &kp TAB  &kp HOME          &kp UP     &kp END       &kp PAGE_UP          &kp FR_SLASH &kp N7 &kp N8 &kp N9 &none      &none
+			&none &kp CAPS &kp LEFT          &kp DOWN   &kp PAGE_DOWN &bt BT_SEL 3         &kp FR_MINUS &kp N4 &kp N5 &kp N6 &kp N0     &none 
+			&none &none    &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOL_UP  &kp DEL              &kp FR_COMMA &kp N1 &kp N2 &kp N3 &kp FR_DOT &none 
+			                                 &none      &none         &none                &none        &none  &none
 			>;
 		};
 	};
