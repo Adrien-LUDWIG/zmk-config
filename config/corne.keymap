@@ -9,6 +9,41 @@
 #include <dt-bindings/zmk/bt.h>
 #include <locale/keys_fr.h>
 
+#include "zmk-helpers/helper.h"
+#include "zmk-helpers/key-labels/36.h"
+
+#define LEFT_HAND_KEYS LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
+#define RIGHT_HAND_KEYS RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
+#define THUMBS_KEYS LH2 LH1 LH0 RH0 RH1 RH2  
+
+
+/ {
+    behaviors {
+        hml: home_row_mod_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <RIGHT_HAND_KEYS THUMBS_KEYS>;
+            hold-trigger-on-release;
+        };
+        hmr: home_row_mod_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            require-prior-idle-ms = <150>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            bindings = <&kp>, <&kp>;
+            hold-trigger-key-positions = <LEFT_HAND_KEYS THUMBS_KEYS>;
+            hold-trigger-on-release;
+        };
+    };
+};
+
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -21,7 +56,7 @@
 			//                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 			bindings = <
 			&none &kp FR_A &kp FR_Z      &kp FR_E      &kp FR_R       &kp FR_T                 &kp FR_Y       &kp FR_U       &kp FR_I      &kp FR_O      &kp FR_P    &none
-			&none &kp FR_Q &mt LALT FR_S &mt LGUI FR_D &mt LCTRL FR_F &kp FR_G                 &kp FR_H       &mt LCTRL FR_J &mt LGUI FR_K &mt LALT FR_L &kp FR_M    &none
+			&none &kp FR_Q &hml LALT FR_S &hml LGUI FR_D &hml LCTRL FR_F &kp FR_G                 &kp FR_H       &hmr LCTRL FR_J &hmr LGUI FR_K &hmr LALT FR_L &kp FR_M    &none
 			&none &kp FR_W &kp FR_X      &kp FR_C      &kp FR_V       &kp FR_B                 &kp FR_N       &kp FR_COMMA   &kp FR_SEMI   &kp FR_COLON  &kp FR_EXCL &none
 			                             &kp TAB       &mt LSHFT ESC  &lt 1 BSPC               &lt 1 FR_SPACE &mt RALT ENTER &kp DEL
 			>;
