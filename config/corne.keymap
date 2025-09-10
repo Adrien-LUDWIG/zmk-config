@@ -15,6 +15,11 @@
 #define LEFT_HAND_KEYS LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
 #define RIGHT_HAND_KEYS RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS_KEYS LH2 LH1 LH0 RH0 RH1 RH2  
+#define NAV 1
+#define NUM 2
+#define MEDIA 3
+#define FUN 4
+#define MOUSE 5
 
 
 / {
@@ -58,7 +63,7 @@
 			&none &kp FR_A &kp FR_Z      &kp FR_E      &kp FR_R       &kp FR_T                 &kp FR_Y       &kp FR_U       &kp FR_I      &kp FR_O      &kp FR_P    &none
 			&none &kp FR_Q &hml LGUI FR_S &hml LALT FR_D &hml LCTRL FR_F &hml LSHIFT FR_G      &kp RSHIT FR_H       &hmr RCTRL FR_J &hmr LALT FR_K &hmr RGUI FR_L &kp FR_M    &none
 			&none &kp FR_W &kp FR_X      &kp FR_C      &kp FR_V       &kp FR_B                 &kp FR_N       &kp FR_COMMA   &kp FR_SEMI   &kp FR_COLON  &kp FR_EXCL &none
-			                             &kp TAB       &mt LSHFT ESC  &lt 1 BSPC               &lt 1 FR_SPACE &mt RALT ENTER &kp DEL
+			                             &none       &lt NUM ESC  &lt NAV BSPC               &mt RALT FR_SPACE &lt MEDIA ENTER &none
 			>;
 		};
 		nav_layer {
