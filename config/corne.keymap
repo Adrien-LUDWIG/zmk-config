@@ -73,10 +73,23 @@
 			// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 			//                    | GUI |     | SPC |   | ENT |     | ALT |
 			bindings = <
-			&none &kp TAB  &kp HOME          &kp UP     &kp END       &kp PAGE_UP          &kp FR_SLASH &kp N7 &kp N8 &kp N9 &none      &none
-			&none &kp CAPS &kp LEFT          &kp DOWN   &kp PAGE_DOWN &bt BT_SEL 3         &kp FR_MINUS &kp N4 &kp N5 &kp N6 &kp N0     &none 
-			&none &none    &kp C_VOLUME_DOWN &kp C_MUTE &kp C_VOL_UP  &kp DEL              &kp FR_COMMA &kp N1 &kp N2 &kp N3 &kp FR_DOT &none 
-			                                 &none      &none         &none                &none        &none  &none
+			&none &none  &none          &none     &none       &none                             &none &none &none &none &none      &none
+ 			&none &hml LGUI FR_Q &hml LALT FR_S &hml LCTRL FR_D &hml LSHIFT FR_F &kp FR_G       &kp CAPS_LOCK &kp LEFT &kp DOWN &kp UP &kp RIGHT     &none 
+			&none &none &none &none &none &none                                                 &kp INSERT &kp HOME &kp PAGE_UP &kp PAGE_DOWN &kp END &none 
+			                                 &none      &none         &none                &kb TAB        &kb DEL  &none
+			>;
+		};
+		num_layer {
+			// -----------------------------------------------------------------------------------------
+			// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
+			// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+			// | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
+			//                    | GUI |     | SPC |   | ENT |     | ALT |
+			bindings = <
+ 			&none &none &none &none &none &none                                                  &kp FR_SLASH &kp N7 &kp N8 &kp N9 &none      &none
+ 			&none &hml LGUI FR_Q &hml LALT FR_S &hml LCTRL FR_D &hml LSHIFT FR_F &kp FR_G        &kp FR_MINUS &kp N4 &kp N5 &kp N6 &kp N0     &none 
+ 			&none &none &none &none &none &none                                                  &kp FR_COMMA &kp N1 &kp N2 &kp N3 &kp FR_DOT &none 
+				&none &none &none &none &none &none		                                 &none      &none         &none                &none        &none  &none
 			>;
 		};
 	};
