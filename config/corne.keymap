@@ -67,17 +67,17 @@
 		nav_layer {
 			bindings = <
 	&none            &none            &none            &none            &none            &none            &none             &none            &none            &none            &none            &none
-    &none            &hml LGUI FR_Q   &hml LALT FR_S   &hml LCTRL FR_D  &hml LSHIFT FR_F &kp FR_G         &kp CAPS_LOCK     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &none 
+    &none            &kp LGUI         &kp LALT         &kp LCTRL        &kp LSHIFT       &none            &kp CAPS_LOCK     &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &none 
     &none            &none            &none            &none            &none            &none            &kp INSERT        &kp HOME         &kp PAGE_UP      &kp PAGE_DOWN    &kp END          &none 
-			                                           &none            &none            &none            &kb TAB           &kb DEL          &none
+			                                           &none            &none            &none            &kp TAB           &kp DEL          &none
 			>;
 		};
 		num_layer {
 			bindings = <
     &none            &none            &none            &none            &none            &none            &kp FR_SLASH      &kp N7           &kp N8           &kp N9           &none            &none
- 	&none            &hml LGUI FR_Q   &hml LALT FR_S   &hml LCTRL FR_D  &hml LSHIFT FR_F &kp FR_G         &kp FR_MINUS      &kp N4           &kp N5           &kp N6           &kp N0           &none 
+ 	&none            &kp LGUI         &kp LALT         &kp LCTRL        &kp LSHIFT       &none            &kp FR_MINUS      &kp N4           &kp N5           &kp N6           &kp N0           &none 
     &none            &none            &none            &none            &none            &none            &kp FR_COMMA      &kp N1           &kp N2           &kp N3           &kp FR_DOT       &none 
-	                                                   &none            &none            &none            &none             &none            &none
+	                                                   &none            &none            &none            &kp TAB           &kp DEL          &none
 			>;
 		};
 	};
