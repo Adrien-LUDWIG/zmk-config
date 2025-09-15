@@ -2,45 +2,45 @@ layout: {zmk_keyboard: corne}
 layers:
   default:
   - ''
-  - FR A
-  - FR Z
-  - FR E
-  - FR R
-  - FR T
-  - FR Y
-  - FR U
-  - FR I
-  - FR O
-  - FR P
+  - A
+  - Z
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
   - ''
   - ''
-  - {t: FR Q, h: LGUI}
-  - {t: FR S, h: LALT}
-  - {t: FR D, h: LCTRL}
-  - {t: FR F, h: LSHIFT}
-  - FR G
-  - FR H
-  - {t: FR J, h: RSHIFT}
-  - {t: FR K, h: RCTRL}
-  - {t: FR L, h: LALT}
-  - {t: FR M, h: RGUI}
+  - {t: Q, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHIFT}
+  - G
+  - H
+  - {t: J, h: RSHIFT}
+  - {t: K, h: RCTRL}
+  - {t: L, h: LALT}
+  - {t: M, h: RGUI}
   - ''
   - ''
-  - FR W
-  - FR X
-  - FR C
-  - FR V
-  - FR B
-  - FR N
-  - FR COMMA
-  - FR SEMI
-  - FR COLON
-  - FR EXCL
+  - W
+  - X
+  - C
+  - V
+  - B
+  - N
+  - ','
+  - ;
+  - ':'
+  - '!'
   - ''
   - ''
   - {t: ESC, h: num}
   - {t: BSPC, h: nav}
-  - {t: FR SPACE, h: RALT}
+  - {t: SPACE, h: RALT}
   - {t: ENTER, h: media}
   - ''
   nav:
@@ -93,7 +93,7 @@ layers:
   - ''
   - ''
   - ''
-  - FR SLASH
+  - /
   - '7'
   - '8'
   - '9'
@@ -105,7 +105,7 @@ layers:
   - LCTRL
   - LSHIFT
   - ''
-  - FR MINUS
+  - '-'
   - '4'
   - '5'
   - '6'
@@ -117,11 +117,11 @@ layers:
   - ''
   - ''
   - ''
-  - FR COMMA
+  - ','
   - '1'
   - '2'
   - '3'
-  - FR DOT
+  - .
   - ''
   - ''
   - {type: held}
