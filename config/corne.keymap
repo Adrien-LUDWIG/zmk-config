@@ -16,7 +16,6 @@
 #define MOUSE 5
 
 // TODO:
-// Combo shift+shift -> caps word
 // Fun layer: combo?
 // Mouse layer: pinky?
 // Copy/paste shortcuts
@@ -85,4 +84,16 @@
 			>;
 		};
 	};
+};
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_caps_word {
+            timeout-ms = <50>;
+            key-positions = <LM1 RM1>;
+            bindings = <&caps_word>;
+            require-prior-idle-ms = <150>;
+        };
+    };
 };
