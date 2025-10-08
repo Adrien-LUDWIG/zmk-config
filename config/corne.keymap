@@ -16,6 +16,7 @@
 #define MOUSE 5
 
 // TODO:
+// Ergo-L diagram layout
 // Fun layer: combo?
 // Mouse layer: pinky?
 // Copy/paste shortcuts
@@ -91,9 +92,12 @@
         compatible = "zmk,combos";
         combo_caps_word {
             timeout-ms = <50>;
+            // FIXME: key labels are wrong
             key-positions = <LM1 RM1>;
             bindings = <&caps_word>;
             require-prior-idle-ms = <150>;
+            // FIXME: m capted as ; (US) so stoping caps word
+            // FIXME: symbols for keyboard stop caps word despite being letters on Ergo-L
         };
     };
 };
