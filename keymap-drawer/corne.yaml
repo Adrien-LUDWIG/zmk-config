@@ -76,8 +76,8 @@ layers:
   - ''
   - INSERT
   - HOME
-  - PAGE UP
   - PAGE DOWN
+  - PAGE UP
   - END
   - ''
   - ''
@@ -172,3 +172,6 @@ layers:
   - ''
   - {type: held}
   - ''
+combos:
+- p: [13, 16]
+  k: '&caps_word'
