@@ -175,3 +175,5 @@ layers:
 combos:
 - p: [13, 16]
   k: '&caps_word'
+- p: [12, 17]
+  k: '&caps_word'
