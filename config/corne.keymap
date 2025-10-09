@@ -99,5 +99,13 @@
             // FIXME: m capted as ; (US) so stoping caps word
             // FIXME: symbols for keyboard stop caps word despite being letters on Ergo-L
         };
+
+        // Test to see where LM2 and RM2 are
+        combo_caps_word_2 {
+            timeout-ms = <50>;
+            key-positions = <LM2 RM2>;
+            bindings = <&caps_word>;
+            require-prior-idle-ms = <150>;
+        };
     };
 };
