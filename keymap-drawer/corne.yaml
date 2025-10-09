@@ -173,7 +173,5 @@ layers:
   - {type: held}
   - ''
 combos:
-- p: [13, 16]
-  k: '&caps_word'
-- p: [12, 17]
+- p: [16, 19]
   k: '&caps_word'
