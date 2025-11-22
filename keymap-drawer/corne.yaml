@@ -83,7 +83,7 @@ layers:
   - ''
   - ''
   - {type: held}
-  - TAB
+  - {t: TAB, h: RALT}
   - DEL
   - ''
   num:
