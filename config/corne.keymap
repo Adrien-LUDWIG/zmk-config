@@ -55,7 +55,7 @@
 		default_layer {
 			bindings = <
     &none            &kp FR_A         &kp FR_Z         &kp FR_E         &kp FR_R         &kp FR_T         &kp FR_Y          &kp FR_U         &kp FR_I         &kp FR_O         &kp FR_P         &none
-	&none            &hml LGUI FR_Q   &hml LALT FR_S   &hml LCTRL FR_D  &hml LSHIFT FR_F &kp FR_G         &kp FR_H          &hmr RSHIFT FR_J  &hmr RCTRL FR_K  &hmr LALT FR_L   &hmr RGUI FR_M   &none
+	&none            &hml LGUI FR_Q   &hml LALT FR_S   &hml LCTRL FR_D  &hml LSHIFT FR_F &kp FR_G         &kp FR_H          &hmr RSHIFT FR_J &hmr RCTRL FR_K  &hmr LALT FR_L   &hmr RGUI FR_M   &none
     &none            &kp FR_W         &kp FR_X         &kp FR_C         &kp FR_V         &kp FR_B         &kp FR_N          &kp FR_COMMA     &kp FR_SEMI      &kp FR_COLON     &kp FR_EXCL      &none
 			                                           &none            &lt NUM ESC      &lt NAV BSPC     &mt RALT FR_SPACE &lt MEDIA ENTER  &none
 			>;
