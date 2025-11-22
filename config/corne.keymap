@@ -106,5 +106,11 @@
             // FIXME: m capted as ; (US) so stoping caps word
             // FIXME: symbols for keyboard stop caps word despite being letters on Ergo-L
         };
+        combo_caps_lock {
+            timeout-ms = <50>;
+            key-positions = <LM2 RM2>;
+            bindings = <&kp CAPSLOCK>;
+            require-prior-idle-ms = <150>;
+        };
     };
 };
